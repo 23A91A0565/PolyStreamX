@@ -668,3 +668,9 @@ For issues and feature requests, please submit through the issue tracking system
  -   C h e c k   t h a t   p o r t   8 0 8 0   i s   n o t   i n   u s e 
  -   R e v i e w   a p p l i c a t i o n   l o g s   f o r   s p e c i f i c   e r r o r   m e s s a g e s  
  
+ # # #   M e m o r y   o r   P e r f o r m a n c e   I s s u e s 
+ -   C h e c k   E X P O R T _ R O W _ L I M I T   a n d   B E N C H M A R K _ R O W _ L I M I T   s e t t i n g s 
+ -   M o n i t o r   d o c k e r   s t a t s   t o   t r a c k   m e m o r y   c o n s u m p t i o n 
+ -   V e r i f y   d a t a b a s e   i n d e x e s   a r e   p r o p e r l y   c r e a t e d 
+ -   C h e c k   n e t w o r k   b a n d w i d t h   f o r   l a r g e   e x p o r t s  
+ 
