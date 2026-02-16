@@ -660,3 +660,11 @@ For issues and feature requests, please submit through the issue tracking system
  -   X M L :   H i e r a r c h i c a l   s t r u c t u r e ,   u s e f u l   f o r   l e g a c y   s y s t e m s 
  -   P a r q u e t :   C o l u m n a r   f o r m a t ,   b e s t   c o m p r e s s i o n   r a t i o s  
  
+ # #   T r o u b l e s h o o t i n g   C o m m o n   I s s u e s 
+ 
+ # # #   A p p l i c a t i o n   W o n ' t   S t a r t 
+ -   V e r i f y   D A T A B A S E _ U R L   i s   c o r r e c t l y   s e t 
+ -   E n s u r e   P o s t g r e S Q L   c o n t a i n e r   i s   r u n n i n g   a n d   h e a l t h y 
+ -   C h e c k   t h a t   p o r t   8 0 8 0   i s   n o t   i n   u s e 
+ -   R e v i e w   a p p l i c a t i o n   l o g s   f o r   s p e c i f i c   e r r o r   m e s s a g e s  
+ 
