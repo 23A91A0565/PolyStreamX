@@ -646,3 +646,11 @@ For issues and feature requests, please submit through the issue tracking system
  -   U s e   H T T P S   i n   p r o d u c t i o n   e n v i r o n m e n t s 
  -   I m p l e m e n t   r a t e   l i m i t i n g   f o r   A P I   e n d p o i n t s  
  
+ # #   A d v a n c e d   C o n f i g u r a t i o n   O p t i o n s 
+ 
+ # # #   D a t a b a s e   C o n n e c t i o n   T u n i n g 
+ -   M a x   c o n n e c t i o n s :   1 0   ( c o n f i g u r a b l e   i n   d a t a b a s e . t s ) 
+ -   I d l e   t i m e o u t :   3 0   s e c o n d s 
+ -   C o n n e c t i o n   t i m e o u t :   2   s e c o n d s 
+ -   C u r s o r   b a t c h   s i z e :   1 0 , 0 0 0   r o w s   p e r   f e t c h  
+ 
