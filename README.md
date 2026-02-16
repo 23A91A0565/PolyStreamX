@@ -683,3 +683,12 @@ For issues and feature requests, please submit through the issue tracking system
  4 .   U p d a t e   t y p e s . t s   t o   i n c l u d e   t h e   n e w   f o r m a t 
  5 .   A d d   t e s t s   i n   s r c / t e s t s . t s  
  
+ # #   A P I   R e s p o n s e   E x a m p l e s 
+ 
+ # # #   S u c c e s s f u l   E x p o r t   J o b   R e s p o n s e 
+ S t a t u s :   2 0 1   C r e a t e d 
+ { 
+     " e x p o r t I d " :   " 5 5 0 e 8 4 0 0 - e 2 9 b - 4 1 d 4 - a 7 1 6 - 4 4 6 6 5 5 4 4 0 0 0 0 " , 
+     " s t a t u s " :   " p e n d i n g " 
+ }  
+ 
