@@ -674,3 +674,12 @@ For issues and feature requests, please submit through the issue tracking system
  -   V e r i f y   d a t a b a s e   i n d e x e s   a r e   p r o p e r l y   c r e a t e d 
  -   C h e c k   n e t w o r k   b a n d w i d t h   f o r   l a r g e   e x p o r t s  
  
+ # # #   E x t e n s i o n   a n d   C u s t o m i z a t i o n 
+ 
+ T o   a d d   a   n e w   e x p o r t   f o r m a t : 
+ 1 .   C r e a t e   a   n e w   f i l e   i n   s r c / e x p o r t e r s / m y f o r m a t . t s 
+ 2 .   I m p l e m e n t   t h e   S t r e a m E x p o r t F u n c t i o n   i n t e r f a c e 
+ 3 .   A d d   t h e   h a n d l e r   t o   t h e   f a c t o r y   i n   s r c / e x p o r t e r s / i n d e x . t s 
+ 4 .   U p d a t e   t y p e s . t s   t o   i n c l u d e   t h e   n e w   f o r m a t 
+ 5 .   A d d   t e s t s   i n   s r c / t e s t s . t s  
+ 
