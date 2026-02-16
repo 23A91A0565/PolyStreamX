@@ -692,3 +692,17 @@ For issues and feature requests, please submit through the issue tracking system
      " s t a t u s " :   " p e n d i n g " 
  }  
  
+ # # #   B e n c h m a r k   R e s p o n s e   E x a m p l e 
+ S t a t u s :   2 0 0   O K 
+ { 
+     " d a t a s e t R o w C o u n t " :   1 0 0 0 0 0 0 0 , 
+     " r e s u l t s " :   [ 
+         { 
+             " f o r m a t " :   " c s v " , 
+             " d u r a t i o n S e c o n d s " :   3 5 . 2 , 
+             " f i l e S i z e B y t e s " :   1 2 5 0 0 0 0 0 0 0 , 
+             " p e a k M e m o r y M B " :   4 2 . 5 
+         } 
+     ] 
+ }  
+ 
