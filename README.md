@@ -1,4 +1,4 @@
-# PolyStream Data Export Engine
+﻿# PolyStream Data Export Engine
 
 A high-performance, memory-efficient data export engine that streams large datasets (10M+ rows) into multiple formats: CSV, JSON, XML, and Parquet.
 
@@ -625,84 +625,3 @@ For issues and feature requests, please submit through the issue tracking system
 - **Version**: 1.0.0
 - **Release Date**: February 2026
 - **Tested On**: PostgreSQL 13, Node.js 18, Docker 20.10+
-# #   B e s t   P r a c t i c e s   f o r   P r o d u c t i o n 
- 
- # # #   M e m o r y   O p t i m i z a t i o n   S t r a t e g i e s 
- -   U s e   c o n f i g u r a b l e   r o w   l i m i t s   f o r   c o n t r o l l e d   e x p o r t s 
- -   S e t   E X P O R T _ R O W _ L I M I T   e n v i r o n m e n t   v a r i a b l e   w i s e l y 
- -   M o n i t o r   w i t h   d o c k e r   s t a t s   d u r i n g   p e a k   u s a g e 
- -   B a t c h   s i z e   o f   1 0 , 0 0 0   r o w s   p r o v i d e s   o p t i m a l   b a l a n c e  
- 
- # # #   P r o d u c t i o n   D e p l o y m e n t   C h e c k l i s t 
- -   S e t   a p p r o p r i a t e   m e m o r y   l i m i t s   o n   c o n t a i n e r s 
- -   C o n f i g u r e   P o s t g r e S Q L   c o n n e c t i o n   p o o l i n g 
- -   E n a b l e   a p p l i c a t i o n   h e a l t h   c h e c k s 
- -   M o n i t o r   r e s p o n s e   t i m e s   a n d   r e s o u r c e   u s a g e  
- 
- # # #   S e c u r i t y   B e s t   P r a c t i c e s 
- -   A l w a y s   u s e   U U I D s   f o r   e x p o r t   j o b   I D s 
- -   I m p l e m e n t   p a r a m e t e r i z e d   q u e r i e s   f o r   d a t a b a s e   s a f e t y 
- -   V a l i d a t e   c o l u m n   n a m e s   b e f o r e   d a t a b a s e   q u e r i e s 
- -   U s e   H T T P S   i n   p r o d u c t i o n   e n v i r o n m e n t s 
- -   I m p l e m e n t   r a t e   l i m i t i n g   f o r   A P I   e n d p o i n t s  
- 
- # #   A d v a n c e d   C o n f i g u r a t i o n   O p t i o n s 
- 
- # # #   D a t a b a s e   C o n n e c t i o n   T u n i n g 
- -   M a x   c o n n e c t i o n s :   1 0   ( c o n f i g u r a b l e   i n   d a t a b a s e . t s ) 
- -   I d l e   t i m e o u t :   3 0   s e c o n d s 
- -   C o n n e c t i o n   t i m e o u t :   2   s e c o n d s 
- -   C u r s o r   b a t c h   s i z e :   1 0 , 0 0 0   r o w s   p e r   f e t c h  
- 
- # # #   F o r m a t - S p e c i f i c   O p t i m i z a t i o n s 
- -   C S V :   M o s t   e f f i c i e n t   f o r   r o w - o r i e n t e d   d a t a ,   m i n i m a l   o v e r h e a d 
- -   J S O N :   E v e n t - b a s e d   s t r e a m i n g ,   g o o d   f o r   A P I s   a n d   i n t e g r a t i o n s 
- -   X M L :   H i e r a r c h i c a l   s t r u c t u r e ,   u s e f u l   f o r   l e g a c y   s y s t e m s 
- -   P a r q u e t :   C o l u m n a r   f o r m a t ,   b e s t   c o m p r e s s i o n   r a t i o s  
- 
- # #   T r o u b l e s h o o t i n g   C o m m o n   I s s u e s 
- 
- # # #   A p p l i c a t i o n   W o n ' t   S t a r t 
- -   V e r i f y   D A T A B A S E _ U R L   i s   c o r r e c t l y   s e t 
- -   E n s u r e   P o s t g r e S Q L   c o n t a i n e r   i s   r u n n i n g   a n d   h e a l t h y 
- -   C h e c k   t h a t   p o r t   8 0 8 0   i s   n o t   i n   u s e 
- -   R e v i e w   a p p l i c a t i o n   l o g s   f o r   s p e c i f i c   e r r o r   m e s s a g e s  
- 
- # # #   M e m o r y   o r   P e r f o r m a n c e   I s s u e s 
- -   C h e c k   E X P O R T _ R O W _ L I M I T   a n d   B E N C H M A R K _ R O W _ L I M I T   s e t t i n g s 
- -   M o n i t o r   d o c k e r   s t a t s   t o   t r a c k   m e m o r y   c o n s u m p t i o n 
- -   V e r i f y   d a t a b a s e   i n d e x e s   a r e   p r o p e r l y   c r e a t e d 
- -   C h e c k   n e t w o r k   b a n d w i d t h   f o r   l a r g e   e x p o r t s  
- 
- # # #   E x t e n s i o n   a n d   C u s t o m i z a t i o n 
- 
- T o   a d d   a   n e w   e x p o r t   f o r m a t : 
- 1 .   C r e a t e   a   n e w   f i l e   i n   s r c / e x p o r t e r s / m y f o r m a t . t s 
- 2 .   I m p l e m e n t   t h e   S t r e a m E x p o r t F u n c t i o n   i n t e r f a c e 
- 3 .   A d d   t h e   h a n d l e r   t o   t h e   f a c t o r y   i n   s r c / e x p o r t e r s / i n d e x . t s 
- 4 .   U p d a t e   t y p e s . t s   t o   i n c l u d e   t h e   n e w   f o r m a t 
- 5 .   A d d   t e s t s   i n   s r c / t e s t s . t s  
- 
- # #   A P I   R e s p o n s e   E x a m p l e s 
- 
- # # #   S u c c e s s f u l   E x p o r t   J o b   R e s p o n s e 
- S t a t u s :   2 0 1   C r e a t e d 
- { 
-     " e x p o r t I d " :   " 5 5 0 e 8 4 0 0 - e 2 9 b - 4 1 d 4 - a 7 1 6 - 4 4 6 6 5 5 4 4 0 0 0 0 " , 
-     " s t a t u s " :   " p e n d i n g " 
- }  
- 
- # # #   B e n c h m a r k   R e s p o n s e   E x a m p l e 
- S t a t u s :   2 0 0   O K 
- { 
-     " d a t a s e t R o w C o u n t " :   1 0 0 0 0 0 0 0 , 
-     " r e s u l t s " :   [ 
-         { 
-             " f o r m a t " :   " c s v " , 
-             " d u r a t i o n S e c o n d s " :   3 5 . 2 , 
-             " f i l e S i z e B y t e s " :   1 2 5 0 0 0 0 0 0 0 , 
-             " p e a k M e m o r y M B " :   4 2 . 5 
-         } 
-     ] 
- }  
- 
